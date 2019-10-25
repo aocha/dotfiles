@@ -1,5 +1,9 @@
 [alias]
-  co = checkout
+	co = checkout
 
 [user]
-  useConfigOnly = true
+	useConfigOnly = true
+
+[ghq]
+	root = ~/dev/repos
+	root = ~/go
