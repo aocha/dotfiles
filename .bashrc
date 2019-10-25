@@ -24,7 +24,7 @@ if type pyenv > /dev/null 2>&1; then
 fi
 
 if type __git_ps1 > /dev/null 2>&1; then
-  PROMPT_COMMAND="__git_ps1 '\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[00m\]' '$ '; $PROMPT_COMMAND"
+  PROMPT_COMMAND="__git_ps1 '\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\W\[\033[00m\]' '$ '; $PROMPT_COMMAND"
   GIT_PS1_SHOWDIRTYSTATE=true
   GIT_PS1_SHOWSTASHSTATE=true
   GIT_PS1_SHOWUNTRACKEDFILES=true
