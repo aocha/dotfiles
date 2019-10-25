@@ -6,7 +6,7 @@ shopt -s autocd
 alias ls='ls -FG'
 alias ll='ls -alFG'
 alias be='bundle exec'
-alias g='cd $(find $HOME/dev/repos $(go env GOPATH)/src -follow -maxdepth 3 -mindepth 3 -type d | peco)'
+alias g='ghq look $(ghq list | peco)'
 alias b='git branch | peco | xargs git checkout'
 
 if type docker > /dev/null 2>&1; then
