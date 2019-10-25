@@ -13,13 +13,14 @@ declare -ar FORMULAE=(
   'bash'
   'ghq'
   'git'
+  'nodenv'
   'peco'
   'rbenv'
   'tig'
   'the_silver_searcher'
   'tmux'
 )
-declare -ar MISSING_FORMULAE=()
+declare -a MISSING_FORMULAE=()
 
 echo '[INFO] check missing formula ...'
 for formula in ${FORMULAE[*]}

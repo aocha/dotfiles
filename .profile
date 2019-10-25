@@ -7,3 +7,8 @@ fi
 if type rbenv > /dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
+
+# @see https://github.com/nodenv/nodenv#how-nodenv-hooks-into-your-shell
+if type nodenv > /dev/null 2>&1; then
+  eval "$(nodenv init -)"
+fi
