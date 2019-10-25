@@ -28,7 +28,7 @@ echo '[INFO] check missing formula ...'
 for formula in ${FORMULAE[*]}
 do
   if [ -z $(brew list | grep -E "^${formula}$") ]; then
-    MISSING_FORMULAE+=$formula
+    MISSING_FORMULAE+=($formula)
   fi
 done
 
