@@ -19,6 +19,7 @@ declare -ar FORMULAE=(
   'tig'
   'the_silver_searcher'
   'tmux'
+  'yarn'
 )
 declare -a MISSING_FORMULAE=()
 
