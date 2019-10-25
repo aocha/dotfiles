@@ -6,7 +6,7 @@ shopt -s autocd
 alias ls='ls -FG'
 alias ll='ls -alFG'
 alias be='bundle exec'
-alias g='ghq look $(ghq list | peco)'
+alias g='cd $(ghq list --full-path | peco)'
 alias b='git branch | peco | xargs git checkout'
 
 if type docker > /dev/null 2>&1; then
