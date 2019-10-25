@@ -12,3 +12,8 @@ fi
 if type nodenv > /dev/null 2>&1; then
   eval "$(nodenv init -)"
 fi
+
+# @see https://github.com/pyenv/pyenv#advanced-configuration
+if type pyenv > /dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi

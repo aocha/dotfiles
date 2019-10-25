@@ -15,6 +15,7 @@ declare -ar FORMULAE=(
   'git'
   'nodenv'
   'peco'
+  'pyenv'
   'rbenv'
   'tig'
   'the_silver_searcher'
