@@ -1,3 +1,6 @@
+export LANG=ja_JP.UTF-8
+export LC_CTYPE=ja_JP.UTF-8
+
 # @see https://golang.org/doc/install#tarball
 if [ -d /usr/local/go/bin ]; then
   export PATH=$PATH:/usr/local/go/bin
