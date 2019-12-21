@@ -17,6 +17,7 @@ declare -ar FORMULAE=(
   'peco'
   'pyenv'
   'rbenv'
+  'speedtest-cli'
   'tig'
   'the_silver_searcher'
   'tmux'
