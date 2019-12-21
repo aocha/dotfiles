@@ -13,6 +13,7 @@ declare -ar FORMULAE=(
   'bash'
   'ghq'
   'git'
+  'jq'
   'nodenv'
   'peco'
   'pyenv'
