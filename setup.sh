@@ -14,6 +14,7 @@ declare -ar FORMULAE=(
   'ghq'
   'git'
   'jq'
+  'nkf'
   'nodenv'
   'peco'
   'pyenv'
