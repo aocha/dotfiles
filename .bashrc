@@ -1,8 +1,6 @@
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
-shopt -s autocd
-
 alias ls='ls -FG'
 alias ll='ls -alFG'
 alias be='bundle exec'
