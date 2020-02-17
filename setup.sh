@@ -12,6 +12,7 @@ fi
 declare -ar FORMULAE=(
   'bash'
   'ghq'
+  'gh'
   'git'
   'jq'
   'nkf'
