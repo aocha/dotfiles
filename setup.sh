@@ -11,6 +11,7 @@ fi
 
 declare -ar FORMULAE=(
   'bash'
+  'direnv'
   'ghq'
   'gh'
   'git'
