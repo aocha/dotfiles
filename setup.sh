@@ -21,6 +21,7 @@ declare -ar FORMULAE=(
   'peco'
   'pyenv'
   'rbenv'
+  'ripgrep'
   'tig'
   'the_silver_searcher'
   'tmux'
