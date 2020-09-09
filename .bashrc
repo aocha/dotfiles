@@ -5,7 +5,7 @@ alias ls='ls -FG'
 alias ll='ls -alFG'
 alias be='bundle exec'
 alias g='cd $(ghq list --full-path | peco)'
-alias b='git branch | peco | xargs git checkout'
+alias b='git branch | peco | xargs git switch'
 
 if type docker > /dev/null 2>&1; then
   alias drm='docker rm $(docker ps -aqf "status=exited")'

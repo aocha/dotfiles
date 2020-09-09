@@ -5,7 +5,8 @@
 	path = ~/.gitconfig.local
 
 [alias]
-	co = checkout
+	s = switch
+	r = restore
 
 [user]
 	useConfigOnly = true
