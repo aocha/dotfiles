@@ -17,7 +17,7 @@ declare -ar HOMEBREW_PACKAGES=(
 function install_homebrew_if_needed() {
   echo "[info] Checking Homebrew..."
   if type /usr/local/bin/brew > /dev/null 2>&1; then
-    echo "[info] Alreaay installed."
+    echo "[info] Alreday installed."
   else
     echo "[info] Installing Homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
