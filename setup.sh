@@ -25,6 +25,11 @@ function install_homebrew_if_needed() {
   fi
 }
 
+function update_homebrew_and_packages() {
+  echo "[info] Updating Homebrew and packages..."
+  /usr/local/bin/brew upgrade
+}
+
 function install_packages_via_homebrew() {
   echo "[info] Installing packages via Homebrew..."
   /usr/local/bin/brew install ${HOMEBREW_PACKAGES[*]}
@@ -37,6 +42,9 @@ function link_files() {
     if [ $file = '.git' ]; then
       continue
     fi
+    if [ $file = '.gitignore' ]; then
+      continue
+    fi
 
     if ln -fns $PWD/$file $HOME/$file; then
       echo "  ${PWD}/${file} → ${HOME}/${file}"
@@ -45,6 +53,7 @@ function link_files() {
 }
 
 install_homebrew_if_needed
+update_homebrew_and_packages
 install_packages_via_homebrew
 link_files
 
