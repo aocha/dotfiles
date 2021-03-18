@@ -6,6 +6,7 @@ declare -ar HOMEBREW_PACKAGES=(
   "bash"
   "ghq"
   "git"
+  "htop"
   "jq"
   "nodenv"
   "peco"
