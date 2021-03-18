@@ -8,6 +8,8 @@
 	rebase = false
 
 [alias]
+	c = checkout
+	b = branch
 	s = switch
 	r = restore
 
