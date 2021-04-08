@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-set -eu
+set -Ceu
 
 declare -ar HOMEBREW_PACKAGES=(
+  "anyenv"
   "bash"
   "ghq"
   "git"
@@ -52,7 +53,7 @@ function update_homebrew_and_packages() {
 function install_missing_packages_via_homebrew() {
   print_notice "Installing missing packages via homebrew..."
   for package in ${HOMEBREW_PACKAGES[*]}; do
-    brew list | grep $package > /dev/null
+    brew list $package > /dev/null 2>&1 && true
     if [ $? -eq 0 ]; then
       print_info "\e[34;1m${package}\e[m is already installed."
     else
@@ -84,4 +85,4 @@ update_homebrew_and_packages
 install_missing_packages_via_homebrew
 link_files
 
-print_notice "Setup completed!!"
+print_success 'Setup completed!! Please reload your profile (exec $SHELL -l) or open a new session.'
