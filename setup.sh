@@ -9,12 +9,9 @@ declare -ar HOMEBREW_PACKAGES=(
   "git"
   "htop"
   "jq"
-  "nodenv"
   "peco"
-  "rbenv"
   "tig"
   "tmux"
-  "yarn"
 )
 
 function print_notice() {
