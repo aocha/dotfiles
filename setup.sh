@@ -12,6 +12,7 @@ declare -ar HOMEBREW_PACKAGES=(
   "peco"
   "tig"
   "tmux"
+  "wget"
 )
 
 function print_notice() {
