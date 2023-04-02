@@ -7,3 +7,5 @@ if ! command -v brew &> /dev/null; then
 else
   echo "[info] Homebrew is already installed."
 fi
+
+brew install rbenv
