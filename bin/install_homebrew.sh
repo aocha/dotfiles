@@ -8,6 +8,16 @@ else
   echo "[info] Homebrew is already installed."
 fi
 
-brew install rbenv
-brew install tig
-brew install tree
+echo "[info] Start install formulas..."
+formulas=(rbenv tig tree)
+for formula in "${formulas[@]}"
+do
+  echo "[info] Start install $formula..."
+  if ! brew list "$formula" >/dev/null 2>&1; then
+    brew install "$formula"
+    echo "[info] Finish install $formula."
+  else
+    echo "[info] $formula is already installed."
+  fi
+done
+echo "[info] Finish install formulas."
