@@ -9,3 +9,4 @@ else
 fi
 
 brew install rbenv
+brew install tig
