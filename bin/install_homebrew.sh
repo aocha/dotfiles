@@ -10,3 +10,4 @@ fi
 
 brew install rbenv
 brew install tig
+brew install tree
