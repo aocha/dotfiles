@@ -9,7 +9,7 @@ else
 fi
 
 echo "[info] Start install formulas..."
-formulas=(ghq peco rbenv tig tree)
+formulas=(ghq peco rbenv tig tmux tree)
 for formula in "${formulas[@]}"
 do
   echo "[info] Start install $formula..."
